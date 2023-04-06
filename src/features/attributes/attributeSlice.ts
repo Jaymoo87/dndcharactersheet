@@ -33,9 +33,9 @@ export const attributeSlice = createSlice({
   name: "attributes",
   reducers: {
     increaseDex: (state: Draft<AttributeState>, action: PayloadAction<number>) => {
-      const keys = Object.keys(state) as (keyof AttributeState)[];
-      const key = keys[action.payload];
-      (state[key] as number) += 1;
+      // const keys = Object.keys(state) as (keyof AttributeState)[];
+      // const key = keys[action.payload];
+      // state[key] as number;
 
       state.dexterity += 1;
       state.points.current--;
